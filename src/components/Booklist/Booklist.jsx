@@ -5,7 +5,7 @@ export const Booklist = ({booklist}) => {
   return (
     <div>
         <div>Lista książek</div>
-        <div>{booklist}</div>
+        <div>{JSON.stringify(booklist, null,2)}</div>
     </div>
   )
 }

@@ -3,9 +3,10 @@ const watchlist = (state=['Garmin'], action) => {
   
       switch (action.type) {
     
-      case "ADD_COFFEE":
+      case "ADD_WATCH":
         return [
-            ...state
+            ...state, 
+            action.text
         ]
     
       default:

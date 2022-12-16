@@ -6,7 +6,7 @@ export const Watchlist = ({watchlist}) => {
   return (
     <div>
         <div>Lista zegarków</div>
-        <div>{watchlist}</div>
+        <div>{JSON.stringify(watchlist, null, 2)}</div>
     </div>
   )
 }

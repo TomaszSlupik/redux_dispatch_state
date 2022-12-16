@@ -11,6 +11,7 @@ import Mainprovider from './components/Mainprovider/Mainprovider';
 import Todolist from './components/Todolist/Todolist';
 import Watchlist from './components/Watchlist/Watchlist';
 import Coffeeadd from './components/Coffeeadd/Coffeeadd';
+import Watchadd from './components/Watchadd/Watchadd';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Coffeeadd />
       <Coffelist />
       <hr></hr>
+      <Watchadd />
       <Watchlist />
     </div>
   );

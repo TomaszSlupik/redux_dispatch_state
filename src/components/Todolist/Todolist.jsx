@@ -1,13 +1,25 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import Addtodoitem from '../Addtodo/Addtodoitem'
 
 
 export const Todolist = ({todo}) => {
+
+const btnADD = () =>  {
+  console.log(todo)
+}
+
+
   return (
     <div>
-        <pre>
-        {JSON.stringify(todo, null, 2)}
-        </pre>
+      <button onClick={btnADD}>sdasd</button>
+        <ul>
+          {
+            todo.map(el => (
+                      <Addtodoitem key={el.id} {...el}/>
+              ))
+            }
+        </ul>
     </div>
   )
 }

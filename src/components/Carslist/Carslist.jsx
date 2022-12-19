@@ -1,16 +1,20 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 
+export const Carslist = () => {
 
+const cars = useSelector(state => state.carlist)
 
+const toggleCar = () =>  {
 
-export const Carslist = ({carlist}) => {
-
-
+}
 
   return (
     <div>
-        <div>{JSON.stringify(carlist, null, 2)}</div>
+        <div>
+          <li onClick={() => toggleCar(cars.id)}>{cars}</li>
+        </div>
     </div>
     
   )

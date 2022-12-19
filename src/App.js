@@ -12,6 +12,8 @@ import Todolist from './components/Todolist/Todolist';
 import Watchlist from './components/Watchlist/Watchlist';
 import Coffeeadd from './components/Coffeeadd/Coffeeadd';
 import Watchadd from './components/Watchadd/Watchadd';
+import Cake from './components/Cake/Cake';
+import Cakeadd from './components/Cakeadd/Cakeadd';
 
 function App() {
   return (
@@ -33,6 +35,9 @@ function App() {
       <hr></hr>
       <Watchadd />
       <Watchlist />
+      <hr></hr>
+      <Cakeadd />
+      <Cake />
     </div>
   );
 }

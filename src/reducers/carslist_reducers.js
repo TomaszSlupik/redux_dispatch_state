@@ -6,6 +6,10 @@ const carlist = (state= ['mercedes', 'bmw'], action) => {
           ...state, 
           action.text
         ]
+      case "RESET":
+        return {
+          ...state, state: []
+        }
     
       default:
         return state
